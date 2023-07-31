@@ -1024,8 +1024,8 @@ function updateView(increment) {
 
   // Change the current view according to the increment value
   currentView += increment;
-  if (currentView < 1) currentView = 3; // Modify if you have more than two slides
-  if (currentView > 3) currentView = 1; // Modify if you have more than two slides
+  if (currentView < 1) currentView = 4; // Modify if you have more than two slides
+  if (currentView > 4) currentView = 1; // Modify if you have more than two slides
 
   // Show the next view
   d3.select("#slide" + currentView).style("display", "block");
@@ -1044,6 +1044,8 @@ d3.select("#prevButton").on("click", function() {
 // Initially hide slide 2, assuming that slide 1 is visible at the start
 d3.select("#slide2").style("display", "none");
 d3.select("#slide3").style("display", "none");
+d3.select("#slide4").style("display", "none");
+
 
 
   
